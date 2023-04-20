@@ -9,7 +9,7 @@ import com.mysql.cj.jdbc.Driver;
 public class ConnectionFactory {
     public static final String URL = "jdbc:mysql://localhost:3306/cars";
     public static final String USER = "hiep";
-    public static final String PASS = "";
+    public static final String PASS = "hiep";
 
     /**
      * Get a connection to database

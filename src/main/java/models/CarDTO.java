@@ -4,8 +4,8 @@ public class CarDTO implements ICarDTO{
     Integer id;
     String make;
     String model;
-    String color;
     Integer year;
+    String color;
     String vin;
 
 
@@ -17,21 +17,20 @@ public class CarDTO implements ICarDTO{
 
 
 
+
     @Override
     public String toString() {
-        return "CarDTO [id=" + id + ", make=" + make + ", model=" + model + ", color=" + color + ", year=" + year
+        return "CarDTO [id=" + id + ", make=" + make + ", model=" + model + ", year=" + year + ", color=" + color
                 + ", vin=" + vin + "]";
     }
 
 
-
-
-    public CarDTO(Integer id, String make, String model, String color, Integer year, String vin) {
+    public CarDTO(Integer id, String make, String model, Integer year, String color, String vin) {
         this.id = id;
         this.make = make;
         this.model = model;
-        this.color = color;
         this.year = year;
+        this.color = color;
         this.vin = vin;
     }
 
@@ -118,7 +117,7 @@ public class CarDTO implements ICarDTO{
     @Override
     public int getId() {
         
-    return getId();
+    return id;
     }
     
 }
